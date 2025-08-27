@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Message Board</title>
+  </head>
+  <body>
+    <h1>What's your message?</h1>
+    <form action="/new" method="post">
+      <div>
+        <label for="user">
+          Name:
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="user"
+            name="user"
+          />
+        </label>
+      </div>
+      <div>
+        <label for="message">
+          Message:
+          <input
+            type="text"
+            placeholder="Enter your message"
+            id="message"
+            name="message"
+          />
+        </label>
+      </div>
+      <button type="submit">Send</button>
+    </form>
+  </body>
+</html>
