@@ -17,6 +17,6 @@ app.use((error, req, res, next) => {
   console.log(error);
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`listening on port: ${PORT}`);
 });
